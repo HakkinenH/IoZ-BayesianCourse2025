@@ -55,7 +55,6 @@ summary(data_nod$year)
 #so we have to prepare the data
 data_lin <-list(N = nrow(data_nod),
                 x = data_nod$year,
-                xpred = 2016,
                 y = data_nod[,5])
 #N(or n) is the number of rows in the data. All stan models require this to be declared
 #all other data variable names are flexible, BUT they have to match the names in our model (see code_lin later)
